@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_72" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MAPD724_W2023_ICE_7" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7aQ-4S-NVf">
+                                <rect key="frame" x="20" y="172" width="390" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lp5-28-9u1">
+                                <rect key="frame" x="20" y="287" width="390" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Oht-1n-kRU">
+                                <rect key="frame" x="20" y="402" width="390" height="238"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <constraints>
+                            <constraint firstItem="Oht-1n-kRU" firstAttribute="top" secondItem="Lp5-28-9u1" secondAttribute="bottom" constant="81" id="6WZ-vX-VeO"/>
+                            <constraint firstItem="Lp5-28-9u1" firstAttribute="top" secondItem="7aQ-4S-NVf" secondAttribute="bottom" constant="94" id="FVY-o4-C1M"/>
+                            <constraint firstItem="7aQ-4S-NVf" firstAttribute="trailing" secondItem="Lp5-28-9u1" secondAttribute="trailing" id="InJ-dr-ShR"/>
+                            <constraint firstItem="7aQ-4S-NVf" firstAttribute="leading" secondItem="Lp5-28-9u1" secondAttribute="leading" id="Mxj-H2-GeD"/>
+                            <constraint firstItem="Lp5-28-9u1" firstAttribute="leading" secondItem="Oht-1n-kRU" secondAttribute="leading" id="SHh-DB-Lnt"/>
+                            <constraint firstItem="7aQ-4S-NVf" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="bgX-FT-uoJ"/>
+                            <constraint firstItem="7aQ-4S-NVf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="113" id="f8G-Tg-cCz"/>
+                            <constraint firstItem="7aQ-4S-NVf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="k7R-Xw-rw6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Oht-1n-kRU" secondAttribute="bottom" constant="258" id="wyD-90-yoW"/>
+                            <constraint firstItem="Lp5-28-9u1" firstAttribute="trailing" secondItem="Oht-1n-kRU" secondAttribute="trailing" id="zkP-m6-7xH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="myImageView" destination="Oht-1n-kRU" id="7f1-xp-sse"/>
+                        <outlet property="myLabel" destination="7aQ-4S-NVf" id="t5I-sA-46f"/>
+                        <outlet property="myTextField" destination="Lp5-28-9u1" id="AZX-4a-JEd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="83.720930232558132" y="2.5751072961373391"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
